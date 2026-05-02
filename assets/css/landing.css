@@ -15,13 +15,13 @@ html, body {
   opacity: 45%;
 }
 
-#videoBackground {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 100%;        /* Covers the full width */
-    height: 70%;       /* Adjust height automatically */
-    min-height: 100%;   /* Minimum height to cover the viewport */
-    z-index: -100;      /* Keeps the video in the background */
-    object-fit: cover;  /* Ensure the video covers the area */
+/* Full background video */
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
