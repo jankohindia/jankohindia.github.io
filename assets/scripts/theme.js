@@ -37,7 +37,7 @@ updateTheme();
 setInterval(updateTheme, 60000); // Checks every minute
 
 function preloadImages() {
-  const images = ['../jsite/assets/images/logo-dark.png', '../jsite/assets/images/logo-light.png'];
+  const images = ['../assets/images/logo-dark.png', '../assets/images/logo-light.png'];
     images.forEach(image => {
         const img = new Image();
         img.src = image;
