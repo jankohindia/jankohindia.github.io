@@ -1,0 +1,79 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust:100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+body.day {
+  background-color: #fefefe; /* Light background for day */
+  color: #101011;
+}
+
+body.night {
+  background-color: #101011; /* Dark background for night */
+  color: #fefefe;
+}
+
+.brand {
+  font-family: 'Galano Grotesque Alt DEMO';
+}
+
+.product {
+  margin-top: -8px;
+}
+
+@media (min-width: 768px) {
+  .product {
+    margin-top: -16px;
+  }
+}
+
+.logo {
+  height: 72px;
+  width: 72px;
+  position: relative;
+  text-indent: -9999px;
+  margin: auto;
+  transition: background 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Corrected transition */
+}
+
+@media (min-width: 768px) {
+  .logo {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .logo {
+    height: 128px;
+    width: 128px;
+  }
+}
+
+body.day .logo {
+  background: url(../images/logo-dark.png) no-repeat center center;
+  background-size: cover;
+
+}
+
+body.night .logo {
+  background: url(../images/logo-light.png) no-repeat center center;
+  background-size: cover;
+}
+
+body {
+    transition: background 0.5s, color 0.5s;
+}
