@@ -9,14 +9,12 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-body.day {
-  background-color: #fefefe; /* Light background for day */
-  color: #101011;
+html.day body {
+    background-color: var(--bs-secondary);
 }
 
-body.night {
-  background-color: #101011; /* Dark background for night */
-  color: #fefefe;
+html.night body {
+    background-color: var(--bs-dark);
 }
 
 .brand {
@@ -61,19 +59,4 @@ body.night {
     height: 128px;
     width: 128px;
   }
-}
-
-body.day .logo {
-  background: url(../images/logo-dark.png) no-repeat center center;
-  background-size: cover;
-
-}
-
-body.night .logo {
-  background: url(../images/logo-light.png) no-repeat center center;
-  background-size: cover;
-}
-
-body {
-    transition: background 0.5s, color 0.5s;
 }
