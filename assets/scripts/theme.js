@@ -2,8 +2,8 @@ function updateTheme() {
     const hour = new Date().getHours();
     const isDayTime = hour >= 6 && hour < 19;
 
-    document.documentElement.classList.toggle('night', isDayTime);
-    document.documentElement.classList.toggle('day', !isDayTime);
+    document.documentElement.classList.toggle('day', isDayTime);
+    document.documentElement.classList.toggle('night', !isDayTime);
 }
 
 updateTheme();
